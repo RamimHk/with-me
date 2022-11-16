@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Contact vi mail</title>
+<style type="text/css">
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+  /* CSS */
+}
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* CSS */
+}
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS */
+}
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* CSS */
+}
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  /* CSS */
+}
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  /* CSS */
+}
+
+h1 {
+  text-align: center;
+  margin: 35px 0 20px 0;
+   background-color :red;
+}
+.container{
+   content-align:center;
+   margin-left:0px;
+   width:100%;
+}
+.form-control{
+   items-align:center;
+   border-radius :8px;
+   width:100%;
+}
+.form-control:hover{
+   background-color :lightgreen;
+}   
+button{
+   background-color :green;
+   color:white;
+   border-radius :8px;
+}
+
+</style>
+</head>
+<body>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" 
+	content="IE=edge">
+<meta name="viewport" 
+	content="width=device-width, intial-scale=1">
+
+<div class="container">
+  <h1>Form Submit</h1>
+  <form target="_blank" action="https://formsubmit.co/ramimsheike@email.com" method="POST">
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+        </div>
+        <div class="col">
+          <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+  </form>
+</div>
+
+</body>
+</html>
